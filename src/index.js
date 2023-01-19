@@ -1,3 +1,15 @@
 import './css/styles.css';
+import { fetchPictures } from './fetchpictures';    
 
-const DEBOUNCE_DELAY = 300;
+import Notiflix from 'notiflix';
+
+const refs = {
+    form : document.querySelector(`.search-form`)
+}
+
+refs.form.addEventListener('submit', onSubmit);
+function onSubmit(evt) {
+    evt.preventDefault()
+}
+
+

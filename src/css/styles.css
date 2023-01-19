@@ -18,3 +18,52 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.search-form{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 72px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form__button{
+  padding-top: 3px;
+  width: 40px;
+    height: 32px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.form__button::before{
+  display: inline-block;
+  content: '';
+  content: "";
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+  background-image: url(../../img/icons8-search-30.png);
+}
